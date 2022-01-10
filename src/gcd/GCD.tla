@@ -4,7 +4,7 @@
 EXTENDS Integers
 CONSTANTS M,N
 VARIABLES x,y
-PositiveInteger(n) == n \in Nat /\ n # 0
+PositiveInteger(n) == n \in Nat /\ n > 0
 -----------------------------------------------------------------------------
 TypeInvariant == /\ PositiveInteger(x)
                  /\ PositiveInteger(y)
